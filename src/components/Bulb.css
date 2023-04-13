@@ -3,7 +3,7 @@
     width: 150px;
     height: 150px;
     float: right;
-    background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat right 0;
+    background: url(../assets/lightbulb.png) no-repeat right 0;
     cursor: pointer;
     z-index: 800;
 }

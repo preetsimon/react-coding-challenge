@@ -1,12 +1,9 @@
 import React from 'react'
 import "./Bulb.css"
 
-const Bulb = ({ lightclass, toggleBulb }) => {
-    // updatedValue = { "item1": "juice" };
-    // setShopCart(shopCart => ({
-    //     ...shopCart,
-    //     ...updatedValue
-    // }));
+
+const Bulb = ({ lightclass, toggleBulb, addToQueue, bulbId }) => {
+
 
     const handleClick = () => {
         lightclass === "on" ? toggleBulb(lightclass => ({
@@ -14,11 +11,16 @@ const Bulb = ({ lightclass, toggleBulb }) => {
         })) : toggleBulb(lightclass => ({
             ...lightclass, ...{ class: "on" }
         }))
+
+        lightclass == "on" && addToQueue(bulbId)
+
+
     }
     return (
         <div onClick={handleClick} className={"light-bulb " + (lightclass || "")}>
         </div>
     )
 }
+
 
 export default Bulb
