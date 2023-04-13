@@ -127,7 +127,7 @@ function App() {
 
       </div>
       <h1 style={{ top: "2%", position: 'absolute', left: "30%" }}>Turn Off the lights!</h1>
-      <div style={{ position: "absolute", top: "300px", right: "300px", left: "0px", padding: "10px" }} className="wrapper">
+      <div style={{ position: "absolute", top: "150px", right: "250px", left: "0px", padding: "10px" }} className="wrapper">
 
         <Bulb toggleBulb={setLight1} lightclass={lightclass1.class} addToQueue={enqueueBack} bulbId={lightclass1.id}></Bulb>
 
