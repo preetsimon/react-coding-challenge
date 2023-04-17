@@ -12,10 +12,6 @@ function App() {
   const [lightclass7, setLight7] = useState("on")
 
 
-  // useEffect(() => {
-
-  // }, [lightclass1, lightclass2, lightclass3, lightclass4, lightclass5, lightclass6, lightclass7])
-
   return (
     <>
       <div className='container' style={{ position: "absolute" }}>
